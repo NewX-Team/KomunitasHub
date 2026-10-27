@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Head, Link } from '@inertiajs/react';
+import { Head, Link, router } from '@inertiajs/react';
 import { BrandLogo } from '@/components/komunitashub/brand-logo';
 import {
     LayoutDashboard,
@@ -46,10 +46,16 @@ export default function CitizenLayout({
     const handleNavigation = (
         nav: 'ringkasan' | 'iuran' | 'surat' | 'tamu' | 'kas' | 'profil',
     ) => {
+        setIsMobileMenuDrawerOpen(false);
         if (onNavClick) {
             onNavClick(nav);
+            return;
         }
-        setIsMobileMenuDrawerOpen(false);
+        if (nav === 'ringkasan') {
+            router.visit('/dashboard');
+        } else if (nav === 'iuran') {
+            router.visit('/iuran');
+        }
     };
 
     return (
