@@ -91,7 +91,7 @@ export default function Dashboard() {
         if (nav === 'iuran') {
             router.visit('/iuran');
         } else if (nav === 'surat') {
-            setIsLetterModalOpen(true);
+            router.visit('/surat');
         } else if (nav === 'tamu') {
             if (guestState === 'active') {
                 setIsQrPassModalOpen(true);
@@ -481,7 +481,7 @@ export default function Dashboard() {
                         {/* Aksi 3: Ajukan Surat Pengantar */}
                         <button
                             type="button"
-                            onClick={() => setIsLetterModalOpen(true)}
+                            onClick={() => router.visit('/surat')}
                             className="group flex flex-col justify-between rounded-xl border border-[#E4E3DC] bg-[#FFFEFA] p-4 text-left shadow-2xs transition-all hover:border-[#2F6B57] hover:bg-[#FAF9F5]"
                         >
                             <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-lg bg-[#EBF3EF] text-[#2F6B57] transition-transform group-hover:scale-105">
