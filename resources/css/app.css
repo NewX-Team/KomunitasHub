@@ -59,6 +59,19 @@
     --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
     --color-sidebar-border: var(--sidebar-border);
     --color-sidebar-ring: var(--sidebar-ring);
+
+    --color-kh-bg: #f7f6f2;
+    --color-kh-surface: #fffefa;
+    --color-kh-charcoal: #1d2924;
+    --color-kh-muted: #66736c;
+    --color-kh-primary: #2f6b57;
+    --color-kh-primary-hover: #245442;
+    --color-kh-accent: #c96d3b;
+    --color-kh-success: #2f7d5c;
+    --color-kh-warning: #b87922;
+    --color-kh-danger: #b74e44;
+    --color-kh-border: #e4e3dc;
+    --color-kh-border-subtle: #ecebe5;
 }
 
 :root {
