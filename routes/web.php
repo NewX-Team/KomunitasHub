@@ -9,5 +9,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 });
 
 Route::inertia('/gabung-komunitas', 'onboarding/join')->name('onboarding.join');
+Route::inertia('/lengkapi-profil', 'onboarding/profile')->name('onboarding.profile');
+Route::inertia('/menunggu-verifikasi', 'onboarding/pending')->name('onboarding.pending');
 
 require __DIR__.'/settings.php';
