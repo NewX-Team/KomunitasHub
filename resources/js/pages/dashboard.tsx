@@ -93,11 +93,7 @@ export default function Dashboard() {
         } else if (nav === 'surat') {
             router.visit('/surat');
         } else if (nav === 'tamu') {
-            if (guestState === 'active') {
-                setIsQrPassModalOpen(true);
-            } else {
-                setIsGuestCreateModalOpen(true);
-            }
+            router.visit('/tamu');
         } else if (nav === 'kas') {
             setIsCashModalOpen(true);
         } else if (nav === 'profil') {
@@ -442,7 +438,7 @@ export default function Dashboard() {
                         {communityMode === 'Cluster Aman' && (
                             <button
                                 type="button"
-                                onClick={() => setIsGuestCreateModalOpen(true)}
+                                onClick={() => router.visit('/tamu')}
                                 className="group flex flex-col justify-between rounded-xl border border-[#E4E3DC] bg-[#FFFEFA] p-4 text-left shadow-2xs transition-all hover:border-[#2F6B57] hover:bg-[#FAF9F5]"
                             >
                                 <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-lg bg-[#EBF3EF] text-[#2F6B57] transition-transform group-hover:scale-105">

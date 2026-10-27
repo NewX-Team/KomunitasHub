@@ -57,6 +57,8 @@ export default function CitizenLayout({
             router.visit('/iuran');
         } else if (nav === 'surat') {
             router.visit('/surat');
+        } else if (nav === 'tamu') {
+            router.visit('/tamu');
         }
     };
 
