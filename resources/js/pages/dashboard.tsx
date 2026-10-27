@@ -95,7 +95,7 @@ export default function Dashboard() {
         } else if (nav === 'tamu') {
             router.visit('/tamu');
         } else if (nav === 'kas') {
-            setIsCashModalOpen(true);
+            router.visit('/kas');
         } else if (nav === 'profil') {
             alert(
                 'Profil Keluarga Pratama:\n• Alamat: Rumah Blok A-12\n• KK: Budi Pratama (Kepala Keluarga)\n• Anggota: 4 Orang\n• Status Warga: Tetap / Aktif',
@@ -496,7 +496,7 @@ export default function Dashboard() {
                         {/* Aksi 4: Buka Laporan Kas */}
                         <button
                             type="button"
-                            onClick={() => setIsCashModalOpen(true)}
+                            onClick={() => router.visit('/kas')}
                             className="group flex flex-col justify-between rounded-xl border border-[#E4E3DC] bg-[#FFFEFA] p-4 text-left shadow-2xs transition-all hover:border-[#2F6B57] hover:bg-[#FAF9F5]"
                         >
                             <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-lg bg-[#F7F6F2] text-[#1D2924] transition-transform group-hover:scale-105">
@@ -541,7 +541,7 @@ export default function Dashboard() {
 
                                 <button
                                     type="button"
-                                    onClick={() => setIsCashModalOpen(true)}
+                                    onClick={() => router.visit('/kas')}
                                     className="inline-flex items-center gap-1 text-xs font-semibold text-[#2F6B57] hover:underline"
                                 >
                                     <span>Buka Laporan Kas</span>
