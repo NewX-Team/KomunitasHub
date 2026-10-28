@@ -224,6 +224,19 @@ export default function CitizenLayout({
                         <span>Bantuan Lingkungan</span>
                     </a>
 
+                    <Link
+                        href="/admin"
+                        className="flex items-center justify-between rounded-md px-3 py-2 text-[#66736C] transition-colors hover:bg-[#F7F6F2] hover:text-[#1D2924]"
+                    >
+                        <div className="flex items-center gap-3">
+                            <ShieldCheck className="h-4 w-4 shrink-0" />
+                            <span>Portal Pengurus</span>
+                        </div>
+                        <span className="rounded bg-[#EBF3EF] px-1.5 py-0.5 text-[9px] font-bold text-[#2F6B57]">
+                            Admin
+                        </span>
+                    </Link>
+
                     {/* Akun Warga Card */}
                     <div className="mt-2 flex items-center justify-between border-t border-[#E4E3DC] p-1.5 pt-2">
                         <div className="flex items-center gap-2.5 overflow-hidden">

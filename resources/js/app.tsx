@@ -18,7 +18,9 @@ void createInertiaApp({
                 return null;
             case name.startsWith('onboarding/'):
                 return null;
-            case name === 'dashboard' || name.startsWith('warga/'):
+            case name === 'dashboard' ||
+                name.startsWith('warga/') ||
+                name.startsWith('admin/'):
                 return null;
             case name.startsWith('auth/'):
                 return AuthLayout;

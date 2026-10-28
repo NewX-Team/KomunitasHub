@@ -14,4 +14,6 @@ Route::inertia('/gabung-komunitas', 'onboarding/join')->name('onboarding.join');
 Route::inertia('/lengkapi-profil', 'onboarding/profile')->name('onboarding.profile');
 Route::inertia('/menunggu-verifikasi', 'onboarding/pending')->name('onboarding.pending');
 
+Route::inertia('/admin', 'admin/dashboard')->name('admin.dashboard');
+
 require __DIR__.'/settings.php';
