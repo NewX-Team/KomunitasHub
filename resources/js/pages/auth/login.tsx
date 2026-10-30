@@ -17,7 +17,7 @@ interface AuthPageProps {
     initialMode?: 'login' | 'register';
     status?: string;
     canResetPassword?: boolean;
-}  
+}   
 
 export default function AuthenticationPage({
     initialMode = 'login',
